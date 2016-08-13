@@ -7,9 +7,11 @@
 #include "SubsetSum.h"
 #include "LongestPath.h"
 #include "DistanceSteps.h"
+#include "SameHalfSum.h"
 using namespace std;
 
 int main(){
+    cout<<sameHalfSum(2);
     
     /* Count ways to travel using 1,2 and 3
     cout<<countWaysToTravelRecursion(3);
