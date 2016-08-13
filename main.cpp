@@ -3,11 +3,18 @@
 #include "KTurnPath.h"
 #include "PathsWithFixedLength.h"
 #include "RemoveElementsWithGivenCondition.h"
+#include "SolutionToNVariableEquation.h"
 using namespace std;
 
 int main(){
+    int coeff[] = {2, 2, 3}; int rhs = 4;
+    cout<<numberOfSolution(coeff, 3, rhs);
+    
+    /* Remove elements with given condition
     int arr[] = {2, 3, 4, 5, 6, 4};
     cout<<function(arr, 6, 1);
+    */
+    
     /* Find paths with k coins
     int k = 12;
     int mat[3][3] = { {1, 2, 3},
