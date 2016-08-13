@@ -9,7 +9,7 @@ using namespace std;
 
 int main(){
     int set[] = {3, 34, 4, 12, 5, 2}; int sum = 9;
-    cout<<subsetSum(set, 6, sum);
+    cout<<sumSubset(set, 6, sum);
     
     /* Find number of solution to n variable equation
     int coeff[] = {2, 2, 3}; int rhs = 4;
