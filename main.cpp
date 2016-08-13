@@ -8,10 +8,20 @@
 #include "LongestPath.h"
 #include "DistanceSteps.h"
 #include "SameHalfSum.h"
+#include "LongestSubsequence.h"
+#include "TotalNumberOfNDigits.h"
 using namespace std;
 
 int main(){
-    cout<<sameHalfSum(2);
+    
+    //total number of digits of length n with even sum = odd sum+1
+    cout<<totalNumber(3);
+    
+    //Longest Repeating Subsequence
+    //cout<<longestSubsequence("axxxaa",6);
+    
+    //Count even length binary sequences with same sum of first and second half bits
+    //cout<<sameHalfSum(2);
     
     /* Count ways to travel using 1,2 and 3
     cout<<countWaysToTravelRecursion(3);
