@@ -6,13 +6,22 @@
 #include "SolutionToNVariableEquation.h"
 #include "SubsetSum.h"
 #include "LongestPath.h"
+#include "DistanceSteps.h"
 using namespace std;
 
 int main(){
+    
+    /* Count ways to travel using 1,2 and 3
+    cout<<countWaysToTravelRecursion(3);
+    cout<<countWaysToTravelIterative(1);
+    */
+    
+    /*
     int mat[][3] = {{1, 2, 9},
                    {5, 3, 8},
                    {4, 6, 7}};
     longestPath(mat,3);
+    */
     
     /* Count number of subsets with given sum
     int set[] = {3, 34, 4, 12, 5, 2}; int sum = 9;
@@ -39,7 +48,7 @@ int main(){
     */
     
     //Go (0,0) to (m,n) in k turns
-    //cout<<kTurnPath(3,3,2);
+    //cout<<kTurnPath(3,3,3);
     
     //Count total dearrangements of n numbers
     //cout<<countDearrangement(4);
