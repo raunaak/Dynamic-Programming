@@ -5,11 +5,19 @@
 #include "RemoveElementsWithGivenCondition.h"
 #include "SolutionToNVariableEquation.h"
 #include "SubsetSum.h"
+#include "LongestPath.h"
 using namespace std;
 
 int main(){
+    int mat[][3] = {{1, 2, 9},
+                   {5, 3, 8},
+                   {4, 6, 7}};
+    longestPath(mat,3);
+    
+    /* Count number of subsets with given sum
     int set[] = {3, 34, 4, 12, 5, 2}; int sum = 9;
     cout<<sumSubset(set, 6, sum);
+    */
     
     /* Find number of solution to n variable equation
     int coeff[] = {2, 2, 3}; int rhs = 4;
