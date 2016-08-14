@@ -13,11 +13,22 @@
 #include "SumOfDigits.h"
 #include "ReachDestination.h"
 #include "NonDecreasingSequence.h"
+#include "LongestPathInMatrix.h"
 using namespace std;
 
 int main(){
+    //Find length of the longest consecutive path from a given starting character
+    char mat[3][3] = { {'a','c','d'},
+                     { 'h','b','a'},
+                     { 'i','g','f'}};
+ 
+    cout << longestPath(mat, 'a') << endl;
+    cout << longestPath(mat, 'e') << endl;
+    cout << longestPath(mat, 'b') << endl;
+    cout << longestPath(mat, 'f') << endl;
+    
     //Count non decreasing sequence with maximum length n
-    cout<<countNonDecreasing(3);
+    //cout<<countNonDecreasing(3);
     
     //Minimum positive points to reach destination
     /*int points[3][3] = { {-2,-3,3},
