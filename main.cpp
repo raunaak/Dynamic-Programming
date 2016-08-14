@@ -10,12 +10,23 @@
 #include "SameHalfSum.h"
 #include "LongestSubsequence.h"
 #include "TotalNumberOfNDigits.h"
+#include "SumOfDigits.h"
+#include "ReachDestination.h"
 using namespace std;
 
 int main(){
+    //Minimum positive points to reach destination
+    int points[3][3] = { {-2,-3,3},
+                      {-5,-10,1},
+                      {10,30,-5}
+                    };
+    cout<<minInitialPoints(points);
+    
+    //Count of n digit numbers whose sum of digits equals to given sum
+    //cout<<countDigits(2,18);
     
     //total number of digits of length n with even sum = odd sum+1
-    cout<<totalNumber(3);
+    //cout<<totalNumber(3);
     
     //Longest Repeating Subsequence
     //cout<<longestSubsequence("axxxaa",6);
