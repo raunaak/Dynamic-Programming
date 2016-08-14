@@ -1,6 +1,6 @@
 #ifndef LONGESTPATH_H
 #define LONGESTPATH_H
-
+//Dynamic Programming used
 //Question Link: http://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/
 bool checkBounds(int i, int j, int n, int m){
     return i>=0&&j>=0&&i<n&&j<m;

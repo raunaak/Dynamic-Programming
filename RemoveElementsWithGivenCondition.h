@@ -1,6 +1,6 @@
 #ifndef REMOVEELEMENTSWITHGIVENCONDITION_H
 #define REMOVEELEMENTSWITHGIVENCONDITION_H
-http://www.geeksforgeeks.org/find-minimum-possible-size-of-array-with-given-rules-for-removal/
+// http://www.geeksforgeeks.org/find-minimum-possible-size-of-array-with-given-rules-for-removal/
 
 //utility function to get to next 3 elements satisfying the given condition
 void goToNextFalse(bool b[], int n, int i, int &x, int& y, int& z){

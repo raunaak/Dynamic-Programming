@@ -2,7 +2,7 @@
 #define COUNTDEARRANGEMENT_H
 //Question Link : http://www.geeksforgeeks.org/count-derangements-permutation-such-that-no-element-appears-in-its-original-position/
 //Formula : D(n) = (n-1)*(D(n-1)+D(n-2))
-
+//dp used
 int countDearrangement(int n){
     int count[n+1];
     count[0] = 0;

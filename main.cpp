@@ -15,12 +15,16 @@
 #include "NonDecreasingSequence.h"
 #include "LongestPathInMatrix.h"
 #include "SumOfMinimumSquares.h"
+#include "MinSumOfCoefficients.h"
 using namespace std;
 
 int main(){
+    //Find minimum number of coins that make a given value
+    int coins[] = {9, 6, 5, 1}; int n = 11;
+    cout<<minSumOfCoefficients(n, coins, 4);
     
     //Minimum number of squares whose sum equals to given number n
-    cout<<sumOfMinSquares(90)<<endl;
+    //cout<<sumOfMinSquares(90)<<endl;
     
     //Find length of the longest consecutive path from a given starting character
     /*char mat[3][3] = { {'a','c','d'},

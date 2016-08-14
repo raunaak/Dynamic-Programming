@@ -1,5 +1,6 @@
 #ifndef PATHSWITHFIXEDLENGTH_H
 #define PATHSWITHFIXEDLENGTH_H
+//dp used
 int b[4][4][13];
 
 int pathWithKCoin(int mat[][3], int i, int j, int coin);

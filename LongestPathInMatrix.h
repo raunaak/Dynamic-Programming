@@ -1,15 +1,14 @@
-#ifndef LONGESTPATHINMATRIX_H
-#define LONGESTPATHINMATRIX_H
+#ifndef LOTHREEGESTPATHITHREETHREEATRIX_H
+#define LOTHREEGESTPATHITHREETHREEATRIX_H
 #include <algorithm>
-#define N 3
-#define M 3
-int dp[N][M];
+#include "Constants.h"
+int dp[THREE][THREE];
 
 bool checkBoundsLongestPath(int i, int j){
-    return i>=0&&j>=0&&i<N&&j<M;
+    return i>=0&&j>=0&&i<THREE&&j<THREE;
 }
 
-int longestPath(char mat[N][M], int i, int j){
+int longestPath(char mat[THREE][THREE], int i, int j){
     int maxi = 0;
     if(dp[i][j]!=-1)return dp[i][j];
     if(checkBoundsLongestPath(i-1,j-1)&&mat[i-1][j-1]==mat[i][j]+1)maxi = std::max(longestPath(mat, i-1, j-1), maxi);
@@ -23,13 +22,13 @@ int longestPath(char mat[N][M], int i, int j){
     return dp[i][j]=1+maxi;
 }
 
-int longestPath(char mat[N][M], char c){
-    for(int i=0; i<N; i++)for(int j=0; j<M; j++)dp[i][j]=-1;
+int longestPath(char mat[THREE][THREE], char c){
+    for(int i=0; i<THREE; i++)for(int j=0; j<THREE; j++)dp[i][j]=-1;
     int maxi = 0;
-    for(int i=0; i<N; i++)for(int j=0; j<M; j++)if(mat[i][j]==c){int x = longestPath(mat, i, j); maxi = std::max(maxi, x);}
+    for(int i=0; i<THREE; i++)for(int j=0; j<THREE; j++)if(mat[i][j]==c){int x = longestPath(mat, i, j); maxi = std::max(maxi, x);}
     return maxi;
 }
 
 
-#endif /* LONGESTPATHINMATRIX_H */
+#endif /* LOTHREEGESTPATHITHREETHREEATRIX_H */
 

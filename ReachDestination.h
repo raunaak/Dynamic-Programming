@@ -1,19 +1,18 @@
-#ifndef REACHDESTINATION_H
-#define REACHDESTINATION_H
+#ifndef REACHDESTITHREEATIOTHREE_H
+#define REACHDESTITHREEATIOTHREE_H
 #include <algorithm>
+#include "Constants.h"
 //Question http://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/
-#define N 3
-#define M 3
-int points[M][N];
+int points[THREE][THREE];
 
 //utility function  
 bool checkBounds(int i, int j){
-    return i>=0&&j>=0&&i<N&&j<M;
+    return i>=0&&j>=0&&i<THREE&&j<THREE;
 }
 
-int minInitialPoints(int mat[N][M]){
-    for(int i=N-1; i>=0; i--){
-        for(int j=M-1; j>=0; j--){
+int minInitialPoints(int mat[THREE][THREE]){
+    for(int i=THREE-1; i>=0; i--){
+        for(int j=THREE-1; j>=0; j--){
             bool b1 = checkBounds(i+1,j);
             bool b2 = checkBounds(i,j+1);
             if(b1&&b2) points[i][j]=std::max(points[i+1][j], points[i][j+1])+mat[i][j];
@@ -26,5 +25,5 @@ int minInitialPoints(int mat[N][M]){
     return -points[0][0];
 }
 
-#endif /* REACHDESTINATION_H */
+#endif /* REACHDESTITHREEATIOTHREE_H */
 

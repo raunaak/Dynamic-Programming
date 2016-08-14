@@ -1,6 +1,7 @@
 #ifndef KTURNPATH_H
 #define KTURNPATH_H
 
+//dp used
 //Question Link: http://www.geeksforgeeks.org/count-number-of-paths-with-k-turns/
 int a[10][10][10][2]; //cache array
 
