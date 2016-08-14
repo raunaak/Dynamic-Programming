@@ -12,15 +12,19 @@
 #include "TotalNumberOfNDigits.h"
 #include "SumOfDigits.h"
 #include "ReachDestination.h"
+#include "NonDecreasingSequence.h"
 using namespace std;
 
 int main(){
+    //Count non decreasing sequence with maximum length n
+    cout<<countNonDecreasing(3);
+    
     //Minimum positive points to reach destination
-    int points[3][3] = { {-2,-3,3},
+    /*int points[3][3] = { {-2,-3,3},
                       {-5,-10,1},
                       {10,30,-5}
                     };
-    cout<<minInitialPoints(points);
+    cout<<minInitialPoints(points);*/
     
     //Count of n digit numbers whose sum of digits equals to given sum
     //cout<<countDigits(2,18);
