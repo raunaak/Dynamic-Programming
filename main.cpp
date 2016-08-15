@@ -16,12 +16,19 @@
 #include "LongestPathInMatrix.h"
 #include "SumOfMinimumSquares.h"
 #include "MinSumOfCoefficients.h"
+#include "ActivitySelectionDP.h"
 using namespace std;
 
 int main(){
+    
+    //activity selection problem in dynamic style
+    int start[]  =  {1, 3, 0, 5, 8, 5};
+    int finish[] =  {2, 4, 6, 7, 9, 9};
+    cout<<activitySelection(start, finish, 0, 6)<<endl;
+    
     //Find minimum number of coins that make a given value
-    int coins[] = {9, 6, 5, 1}; int n = 11;
-    cout<<minSumOfCoefficients(n, coins, 4);
+    //int coins[] = {9, 6, 5, 1}; int n = 11;
+    //cout<<minSumOfCoefficients(n, coins, 4);
     
     //Minimum number of squares whose sum equals to given number n
     //cout<<sumOfMinSquares(90)<<endl;
